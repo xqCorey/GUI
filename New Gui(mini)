@@ -444,9 +444,9 @@ end)
 
 KillGui.Name = "Kill Gui"
 KillGui.Parent = Third
-KillGui.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+KillGui.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
 KillGui.Position = UDim2.new(0.200000003, 0, 0.827930152, 0)
-KillGui.Size = UDim2.new(0.776237607, 0, 0.124688283, 0)
+KillGui.Size = UDim2.new(0.0701602101, 0, 0.0334994942, 0)
 KillGui.Font = Enum.Font.SourceSans
 KillGui.Text = "Kill Page"
 KillGui.TextColor3 = Color3.fromRGB(0, 0, 255)
@@ -456,7 +456,7 @@ Open.Name = "Open "
 Open.Parent = CoreysGui
 Open.BackgroundColor3 = Color3.fromRGB(3, 81, 239)
 Open.BorderColor3 = Color3.fromRGB(0, 0, 255)
-Open.Position = UDim2.new(0, 0, 0.394273192, 0)
+Open.Position = UDim2.new(0, 0, 0.406387746, 0)
 Open.Size = UDim2.new(0.108255453, 0, 0.0456140339, 0)
 Open.Font = Enum.Font.SourceSans
 Open.Text = "OPEN/CLOSE"
