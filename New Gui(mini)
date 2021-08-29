@@ -52,8 +52,9 @@ First.BorderColor3 = Color3.fromRGB(3, 81, 239)
 First.BorderSizePixel = 3
 First.Position = UDim2.new(0.198130786, 0, 0.25881058, 0)
 First.Size = UDim2.new(0.393302172, 0, 0.469005853, 0)
+First.Active = true
+First.Draggable = true
 First.Visible = false
-
 
 Title.Name = "Title"
 Title.Parent = First
@@ -111,7 +112,17 @@ God.Text = "God Mode OP"
 God.TextColor3 = Color3.fromRGB(0, 0, 255)
 God.TextSize = 22.000
 God.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/xqCorey/Scripts/Main/God%20mode", true))()
+	_G.main = true 
+	while _G.main do 
+		wait()
+		local children = game:GetService("ReplicatedStorage"):GetChildren()
+		for i, child in ipairs(children) do
+			if child.Name == "GhostRiderPart" then
+				child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+			end
+		end 
+	end
+
 end)
 
 Psychic_all_on.Name = "Psychic_all_on"
@@ -166,6 +177,7 @@ Split.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/xqCorey/Scripts/Main/OP%20Split", true))()
 end)
 
+
 Void.Name = "Void"
 Void.Parent = First
 Void.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
@@ -179,7 +191,6 @@ Void.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua", true))()
 end)
 
-
 Auto_respawn_on.Name = "Auto_respawn_on"
 Auto_respawn_on.Parent = First
 Auto_respawn_on.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
@@ -190,7 +201,7 @@ Auto_respawn_on.Text = "Auto Respawn On"
 Auto_respawn_on.TextColor3 = Color3.fromRGB(0, 0, 255)
 Auto_respawn_on.TextSize = 22.000
 Auto_respawn_on.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/xqCorey/Scripts/Main/Auto%20Respawn", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xqCorey/Scripts/Main/Auto%20Respawn%20Off", true))()
 end)
 
 NoShield.Name = "NoShield"
@@ -214,6 +225,7 @@ NoShield.MouseButton1Down:connect(function()
 	end
 end)
 
+
 NoRep.Name = "NoRep"
 NoRep.Parent = First
 NoRep.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
@@ -226,6 +238,7 @@ NoRep.TextSize = 22.000
 NoRep.MouseButton1Down:connect(function()
 	game.Players.LocalPlayer.Character.Head.NameBbGui.NameTxt: Destroy()
 end)
+
 
 GodButton.Name = "GodButton"
 GodButton.Parent = First
@@ -261,6 +274,8 @@ Second.BorderSizePixel = 3
 Second.Position = UDim2.new(0.198130727, 0, 0.25881058, 0)
 Second.Size = UDim2.new(0.393302172, 0, 0.469005853, 0)
 Second.Visible = false
+Second.Active = true
+Second.Draggable = true
 
 Title2.Name = "Title2"
 Title2.Parent = Second
@@ -296,6 +311,7 @@ CDM.TextSize = 22.000
 CDM.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 end)
+
 
 Yield.Name = "Yield"
 Yield.Parent = Second
@@ -369,6 +385,8 @@ Third.BorderSizePixel = 3
 Third.Position = UDim2.new(0.197507799, 0, 0.25881058, 0)
 Third.Size = UDim2.new(0.393302172, 0, 0.469005853, 0)
 Third.Visible = false
+Third.Active = true
+Third.Draggable = true
 
 Title3.Name = "Title3"
 Title3.Parent = Third
@@ -413,7 +431,7 @@ InvisShield.Text = "Invis God mode Shield"
 InvisShield.TextColor3 = Color3.fromRGB(0, 0, 255)
 InvisShield.TextSize = 22.000
 InvisShield.MouseButton1Down:connect(function()
-	luagame.Players.LocalPlayer.Character.GodModeShield.Visible = false
+	game.Players.LocalPlayer.Character.GodModeShield.Visible = false
 end)
 
 AntiSpy.Name = "AntiSpy"
@@ -444,9 +462,9 @@ end)
 
 KillGui.Name = "Kill Gui"
 KillGui.Parent = Third
-KillGui.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+KillGui.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 KillGui.Position = UDim2.new(0.200000003, 0, 0.827930152, 0)
-KillGui.Size = UDim2.new(0.0701602101, 0, 0.0334994942, 0)
+KillGui.Size = UDim2.new(0.776237607, 0, 0.124688283, 0)
 KillGui.Font = Enum.Font.SourceSans
 KillGui.Text = "Kill Page"
 KillGui.TextColor3 = Color3.fromRGB(0, 0, 255)
@@ -454,10 +472,10 @@ KillGui.TextSize = 22.000
 
 Open.Name = "Open "
 Open.Parent = CoreysGui
-Open.BackgroundColor3 = Color3.fromRGB(3, 81, 239)
+Open.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
 Open.BorderColor3 = Color3.fromRGB(0, 0, 255)
 Open.Position = UDim2.new(0, 0, 0.406387746, 0)
-Open.Size = UDim2.new(0.108255453, 0, 0.0456140339, 0)
+Open.Size = UDim2.new(0.0701602101, 0, 0.0334994942, 0)
 Open.Font = Enum.Font.SourceSans
 Open.Text = "OPEN/CLOSE"
 Open.TextColor3 = Color3.fromRGB(0, 0, 255)
@@ -465,7 +483,7 @@ Open.TextSize = 21.000
 
 -- Scripts:
 
-local function TAIDQ_fake_script() -- Next.LocalScript 
+local function CUAOP_fake_script() -- Next.LocalScript 
 	local script = Instance.new('LocalScript', Next)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -474,8 +492,8 @@ local function TAIDQ_fake_script() -- Next.LocalScript
 	end)
 	
 end
-coroutine.wrap(TAIDQ_fake_script)()
-local function JDQIUR_fake_script() -- Next2.LocalScript 
+coroutine.wrap(CUAOP_fake_script)()
+local function OTYRIO_fake_script() -- Next2.LocalScript 
 	local script = Instance.new('LocalScript', Next2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -483,8 +501,8 @@ local function JDQIUR_fake_script() -- Next2.LocalScript
 		script.Parent.Parent.Parent.Third.Visible = true
 	end)
 end
-coroutine.wrap(JDQIUR_fake_script)()
-local function BXHDSZT_fake_script() -- Back.LocalScript 
+coroutine.wrap(OTYRIO_fake_script)()
+local function MQCFZFL_fake_script() -- Back.LocalScript 
 	local script = Instance.new('LocalScript', Back)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -492,8 +510,8 @@ local function BXHDSZT_fake_script() -- Back.LocalScript
 		script.Parent.Parent.Parent.First.Visible = true
 	end)
 end
-coroutine.wrap(BXHDSZT_fake_script)()
-local function FFSSMC_fake_script() -- Back2.LocalScript 
+coroutine.wrap(MQCFZFL_fake_script)()
+local function XKNXJTZ_fake_script() -- Back2.LocalScript 
 	local script = Instance.new('LocalScript', Back2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -501,16 +519,16 @@ local function FFSSMC_fake_script() -- Back2.LocalScript
 		script.Parent.Parent.Parent.Second.Visible = true
 	end)
 end
-coroutine.wrap(FFSSMC_fake_script)()
-local function URIPQ_fake_script() -- KillGui.LocalScript 
+coroutine.wrap(XKNXJTZ_fake_script)()
+local function TBTPW_fake_script() -- KillGui.LocalScript 
 	local script = Instance.new('LocalScript', KillGui)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(URIPQ_fake_script)()
-local function NTZNHA_fake_script() -- Open.LocalScript 
+coroutine.wrap(TBTPW_fake_script)()
+local function TIUVCBY_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
 	local gui = script.Parent.Parent.First
@@ -527,4 +545,4 @@ local function NTZNHA_fake_script() -- Open.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NTZNHA_fake_script)()
+coroutine.wrap(TIUVCBY_fake_script)()
