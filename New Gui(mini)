@@ -457,7 +457,7 @@ RankChanger.Text = "Rank Changer"
 RankChanger.TextColor3 = Color3.fromRGB(0, 0, 255)
 RankChanger.TextSize = 22.000
 RankChanger.MouseButton1Down:connect(function()
-	loadstring(game:HttpsGet("https://raw.githubusercontent.com/xqCorey/Scripts/Main/Rank%20Changer"))()
+	loadstring(game:HttpsGet("https://raw.githubusercontent.com/xqCorey/Scripts/Main/Rank%20Changer", true))()
 end)
 
 KillGui.Name = "Kill Gui"
