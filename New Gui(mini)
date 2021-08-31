@@ -201,7 +201,7 @@ Auto_respawn_on.Text = "Auto Respawn On"
 Auto_respawn_on.TextColor3 = Color3.fromRGB(0, 0, 255)
 Auto_respawn_on.TextSize = 22.000
 Auto_respawn_on.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/xqCorey/Scripts/Main/Auto%20Respawn%20Off", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xqCorey/Scripts/Main/Auto%20Respawn", true))()
 end)
 
 NoShield.Name = "NoShield"
