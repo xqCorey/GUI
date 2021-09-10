@@ -112,7 +112,6 @@ God.Text = "God Mode OP"
 God.TextColor3 = Color3.fromRGB(0, 0, 255)
 God.TextSize = 22.000
 God.MouseButton1Down:connect(function()
-https://raw.githubusercontent.com/xqCorey/Scripts/Main/GOD%20MODE%20GUI
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/xqCorey/Scripts/Main/GOD%20MODE%20GUI", true))()
 end)
 
