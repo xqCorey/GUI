@@ -237,11 +237,31 @@ GodButton.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 GodButton.Position = UDim2.new(0.784158409, 0, 0.660847902, 0)
 GodButton.Size = UDim2.new(0.192079201, 0, 0.124688283, 0)
 GodButton.Font = Enum.Font.SourceSans
-GodButton.Text = "(GOD)"
+GodButton.Text = "C Spam"
 GodButton.TextColor3 = Color3.fromRGB(0, 0, 255)
 GodButton.TextSize = 22.000
 GodButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/xqCorey/Scripts/Main/God%20Button", true))()
+	while wait() do
+        if game.Players.LocalPlayer.Character:FindFirstChild("ForceField") then
+        game.Players.LocalPlayer.Character.ForceField:Destroy()
+    end
+local ohTable1 = {
+    [1] = "Skill_Punch",
+    [2] = "Right"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(ohTable1)
+wait()
+if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+local ohTable2 = {
+    [1] = "Respawn"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(ohTable2)
+end
+end
+end
 end)
 
 Auto_respawn_off.Name = "Auto_respawn_off"
