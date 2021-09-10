@@ -112,17 +112,8 @@ God.Text = "God Mode OP"
 God.TextColor3 = Color3.fromRGB(0, 0, 255)
 God.TextSize = 22.000
 God.MouseButton1Down:connect(function()
-	_G.main = true 
-	while _G.main do 
-		wait()
-		local children = game:GetService("ReplicatedStorage"):GetChildren()
-		for i, child in ipairs(children) do
-			if child.Name == "GhostRiderPart" then
-				child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-			end
-		end 
-	end
-
+https://raw.githubusercontent.com/xqCorey/Scripts/Main/GOD%20MODE%20GUI
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xqCorey/Scripts/Main/GOD%20MODE%20GUI", true))()
 end)
 
 Psychic_all_on.Name = "Psychic_all_on"
