@@ -437,11 +437,11 @@ InvisShield.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 InvisShield.Position = UDim2.new(0.0297029726, 0, 0.329177052, 0)
 InvisShield.Size = UDim2.new(0.946534634, 0, 0.124688283, 0)
 InvisShield.Font = Enum.Font.SourceSans
-InvisShield.Text = "Invis God mode Shield"
+InvisShield.Text = "CBring"
 InvisShield.TextColor3 = Color3.fromRGB(0, 0, 255)
 InvisShield.TextSize = 22.000
 InvisShield.MouseButton1Down:connect(function()
-	game.Players.LocalPlayer.Character.GodModeShield.Visible = false
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/xqCorey/Scripts/Main/Cbring"),true))()
 end)
 
 AntiSpy.Name = "AntiSpy"
